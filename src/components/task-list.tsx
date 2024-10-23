@@ -2,11 +2,7 @@ import React from 'react';
 import { TaskItemProps, TaskListProps } from '../utils/types';
 import { Check } from 'lucide-react';
 
-export const TaskItem: React.FC<TaskItemProps> = ({
-  task,
-  onToggle,
-  onEdit,
-}) => (
+export const TaskItem: React.FC<TaskItemProps> = ({ task, onToggle, onEdit }) => (
   <div
     className="bg-white rounded-lg border justify-between border-[#E7E7E7] p-4 flex items-center gap-3 h-[91px]"
     style={{ boxShadow: '0px 4px 4px 0px #0000001A' }}
@@ -23,7 +19,7 @@ export const TaskItem: React.FC<TaskItemProps> = ({
       <span
         className={`${
           task.completed ? 'line-through text-[#8D8D8D]' : 'text-[#071D55]'
-        } w-[173px] truncate`}
+        } w-[200px] truncate`}
       >
         {task.name}
       </span>

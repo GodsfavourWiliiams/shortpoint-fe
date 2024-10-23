@@ -1,5 +1,5 @@
 // TaskForm.tsx
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { TaskFormProps } from '../utils/types';
 
 export const TaskForm: React.FC<TaskFormProps> = ({
@@ -9,6 +9,12 @@ export const TaskForm: React.FC<TaskFormProps> = ({
   onDelete,
 }) => {
   const [taskName, setTaskName] = useState<string>(initialTask?.name || '');
+
+  useEffect(() => {
+    if (initialTask) {
+      setTaskName(initialTask.name);
+    }
+  }, [initialTask]);
 
   const handleSubmit = (e: React.FormEvent): void => {
     e.preventDefault();
