@@ -86,7 +86,10 @@ const TaskManager: React.FC = () => {
 
         {/* Add Task Button */}
         <button
-          onClick={() => setCurrentTask({ id: '', name: '', completed: false })}
+          onClick={() => {
+            setIsEditing(false);
+            setCurrentTask({ id: '', name: '', completed: false });
+          }}
           className="absolute bottom-8 right-4 w-[60px] h-[61px] bg-[#3556AB] rounded-full text-white text-2xl flex items-center justify-center shadow-lg hover:bg-[#3556AB]/70 transition-colors"
         >
           +
