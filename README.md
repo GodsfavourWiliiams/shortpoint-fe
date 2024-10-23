@@ -1,4 +1,4 @@
-# Getting Started with Short Point FE
+# Getting Started with Task FE
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
