@@ -1,4 +1,3 @@
-// TaskForm.tsx
 import React, { useEffect, useState } from 'react';
 import { TaskFormProps } from '../utils/types';
 
@@ -49,7 +48,6 @@ export const TaskForm: React.FC<TaskFormProps> = ({
             onClick={() => onDelete(initialTask!.id)}
             className="px-6 py-2 bg-[#AB3535] border h-[61px] w-fit border-[#720D0D] text-white rounded-lg hover:bg-[#AB3535]/80"
             style={{
-              //   boxShadow: '0px 3px 1px 0px #A8B5DE80 inset',
               boxShadow: '0px 4px 4px 0px #00000040',
             }}
           >
@@ -60,7 +58,6 @@ export const TaskForm: React.FC<TaskFormProps> = ({
           type="submit"
           className="px-6 py-2 bg-[#3556AB] h-[61px] w-[436px] text-white rounded-lg hover:bg-[#3556AB]/80"
           style={{
-            //   boxShadow: '0px 3px 1px 0px #A8B5DE80 inset',
             boxShadow: '0px 4px 4px 0px #00000040',
           }}
         >
